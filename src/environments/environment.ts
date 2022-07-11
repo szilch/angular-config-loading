@@ -2,7 +2,9 @@
 // `ng build` replaces `environment.ts` with `environment.prod.ts`.
 // The list of file replacements can be found in `angular.json`.
 
-export const environment = {
+import { AppConfig } from '../app/config/app.config';
+
+export const environment: Partial<AppConfig> = {
   production: false
 };
 
